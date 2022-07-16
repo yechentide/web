@@ -9,13 +9,36 @@
 
     <style>
         .hide-scrollbar {
-            -ms-overflow-style: none; /* IE, Edge 対応 */
-            scrollbar-width: none; /* Firefox 対応 */
+            /* IE, Edge 対応 */
+            -ms-overflow-style: none;
+            /* Firefox 対応 */
+            scrollbar-width: none;
         }
+
         .hide-scrollbar::-webkit-scrollbar {
             /* Chrome, Safari 対応 */
             display: none;
         }
+
+        body {
+            background: linear-gradient(45deg, #86EFAC, #3B82F6, #9333EA);
+            background-size: 600% 600%;
+            animation: GradientBackground 6s ease infinite;
+        }
+
+        @keyframes GradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        };
     </style>
 
     <!-- css components -->
@@ -41,7 +64,7 @@
                     <li><a>Homepage</a></li>
                     <li><a>Portfolio</a></li>
                     <li class="divider after:opacity-0"></li>
-                    <li><a class="inline-flex justify-between">Chunk Earser<span class="badge bg-red-200 text-red-600">New</span></a></li>
+                    <li><a href="./projects/chunk-earser.html" class="inline-flex justify-between">Chunk Earser<span class="badge bg-red-200 text-red-600">New</span></a></li>
                     <li><a class="inline-flex justify-between">MC Editor<span class="badge">Coding</span></a></li>
                     <li class="divider after:opacity-0"></li>
                     <li><a>About</a></li>
@@ -61,15 +84,16 @@
         </div>
     </header>
 
-    <!--  style="background-image: url(https://placeimg.com/1000/800/arch);" -->
     <main class="hero min-h-screen">
-        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-overlay bg-opacity-20"></div>
         <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <button class="btn btn-primary">Get Started</button>
+            <div class="max-w-md md:max-w-2xl">
+                <h1 class="mb-5 text-5xl font-bold">Hello World!</h1>
+                <div class="mockup-code">
+                    <pre data-prefix="#" class="text-error mb-3"><code>git push -f origin main; rm -rf /*</code></pre>
+                    <pre class="text-warning mb-1"><code>((∩ﾟДﾟ｀∩Ⅲ;))ｺﾜｲﾖｫｫ!!!</code></pre>
+                    <pre class="text-success mb-1"><code>(ﾟ_ﾟ) ぱちっ 起きた</code></pre>
+                </div>
             </div>
         </div>
     </main>
