@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chunk Earser</title>
+
+    <!-- css components -->
+    <link rel="stylesheet" href="../css/spinner.css">
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="hide-scrollbar">
+    <header class="fixed top-0 navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="../index.html">Top page</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li class="divider after:opacity-0"></li>
+                    <li><a href="./projects/chunk-earser.html" class="inline-flex justify-between">Chunk Earser<span class="badge bg-red-200 text-red-600">New</span></a></li>
+                    <li><a class="inline-flex justify-between">MC Editor<span class="badge">Coding</span></a></li>
+                    <li class="divider after:opacity-0"></li>
+                    <li><a>About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <a class="btn btn-ghost normal-case text-xl">Chunk Earser</a>
+        </div>
+        <div class="navbar-end">
+            <span>yechentide</span>
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                    <img src="../images/me.png" />
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <main class="text-white mt-20 mb-28 md:mb-16 p-4 bg-slate-400 w-11/12 md:w-3/4 mx-auto rounded-2xl">
+        <div class="tabs tabs-boxed inline-block">
+            <a class="tab tab-active">Info</a>
+            <a class="tab">Privacy Policy</a>
+        </div>
+    </main>
+
+    <footer class="fixed bottom-0 footer justify-items-center gap-4 bg-neutral p-4 text-neutral-content md:justify-items-start">
+        <div class="items-center grid-flow-col">
+            <div class="orbit-spinner">
+                <div class="orbit"></div>
+                <div class="orbit"></div>
+                <div class="orbit"></div>
+            </div>
+            <p>Copyright © 2022 - All right reserved</p>
+        </div>
+        <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a href="https://github.com/yechentide"><img src="../images/github.svg" alt="Github"></a>
+            <a href="https://twitter.com/yechentide"><img src="../images/twitter.svg" alt="Twitter"></a>
+            <a href="mailto:yechenpndev&#64;gmail.com"><img src="../images/mail.svg" alt="Mail"></a>
+        </div>
+    </footer>
+</body>
+</html>
