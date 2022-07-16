@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polar Night</title>
+
+    <style>
+        .hide-scrollbar {
+            -ms-overflow-style: none; /* IE, Edge 対応 */
+            scrollbar-width: none; /* Firefox 対応 */
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            /* Chrome, Safari 対応 */
+            display: none;
+        }
+    </style>
+
+    <!-- css components -->
+    <link rel="stylesheet" href="./css/spinner.css">
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="hide-scrollbar">
+    <header class="fixed top-0 navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Homepage</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Chunk Earser<span class="badge">New</span></a></li>
+                    <li><a>About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <a class="btn btn-ghost normal-case text-xl">Polar Night</a>
+        </div>
+        <div class="navbar-end">
+            <span>yechentide</span>
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                    <img src="./images/me.png" />
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <!--  style="background-image: url(https://placeimg.com/1000/800/arch);" -->
+    <main class="hero min-h-screen">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fixed bottom-0 footer justify-items-center gap-4 bg-neutral p-4 text-neutral-content md:justify-items-start">
+        <div class="items-center grid-flow-col">
+            <div class="orbit-spinner">
+                <div class="orbit"></div>
+                <div class="orbit"></div>
+                <div class="orbit"></div>
+            </div>
+            <p>Copyright © 2022 - All right reserved</p>
+        </div>
+        <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a href="https://github.com/yechentide"><img src="./images/github.svg" alt="Github"></a>
+            <a href="https://twitter.com/yechentide"><img src="./images/twitter.svg" alt="Twitter"></a>
+            <a href="mailto:yechenpndev&#64;gmail.com"><img src="./images/mail.svg" alt="Mail"></a>
+        </div>
+        <!--  -->
+    </footer>
+</body>
+
+</html>
